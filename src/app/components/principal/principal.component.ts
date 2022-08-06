@@ -9,7 +9,7 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentCh
 export class PrincipalComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
   // Expondo variável através de input propety
-  @Input() valorIncial: number = 10;
+  @Input() valorInicial: number = 10;
   // valorIncial: number = 10;
 
   constructor() {
