@@ -18,3 +18,20 @@ header i{
     font-size: 3rem;
     vertical-align: middle;
 }
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+mat-card-title{
+    font-size: 2rem;
+}
+
+mat-card{
+    background-color: #d18181;
+    color: #fff;
+    width: 70%;
+}
