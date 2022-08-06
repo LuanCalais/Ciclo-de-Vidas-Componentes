@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-  <app-principal></app-principal>
+  template: `<app-principal [valorInicial]="valor"></app-principal>
   `,
   styles: []
 })
 export class AppComponent {
-  title = 'ciclo-de-vida';
+  valor: number = 5;
 }

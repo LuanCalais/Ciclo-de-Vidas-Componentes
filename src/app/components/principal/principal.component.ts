@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy, Input } from '@angular/core';
 
 @Component({
   selector: 'app-principal',
@@ -6,11 +6,50 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: [ './principal.component.css'
   ]
 })
-export class PrincipalComponent implements OnInit {
+export class PrincipalComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
-  constructor() { }
+  // Expondo variável através de input propety
+  @Input() valorIncial: number = 10;
+  // valorIncial: number = 10;
 
-  ngOnInit(): void {
+  constructor() {
+     this.log('constructor');
+   }
+
+  ngOnChanges(){
+    this.log('ngOnChanges');
+  }
+
+  ngOnInit() {
+    this.log('ngOnInit');
+  }
+
+  ngDoCheck() {
+    this.log('ngDoCheck');
+  }
+
+  ngAfterContentInit() {
+    this.log('ngAfterContentInit');
+  }
+
+  ngAfterContentChecked() {
+    this.log('ngAfterContentChecked');
+  }
+
+  ngAfterViewInit(){
+    this.log('ngAfterViewInit')
+  }
+
+  ngAfterViewChecked() {
+    this.log('ngAfterViewChecked');
+  }
+
+  ngOnDestroy() {
+    this.log('ngOnDestroy');
+  }
+
+  log(hook: string){
+    console.log(`iniciado ${hook}`);
   }
 
 }
