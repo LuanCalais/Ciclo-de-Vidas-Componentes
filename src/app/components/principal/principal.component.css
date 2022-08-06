@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #7792a9;
+}
+
+header h1{
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+header i{
+    margin-left: 0.6em;
+    color: #fff;
+    font-size: 3rem;
+    vertical-align: middle;
+}
